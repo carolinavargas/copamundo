@@ -17,3 +17,5 @@ class JugadorAdmin(admin.ModelAdmin):
 admin.site.register(Equipo, EquipoAdmin)
 admin.site.register(Continente, ContinenteAdmin)
 admin.site.register(Jugador, JugadorAdmin)
+
+

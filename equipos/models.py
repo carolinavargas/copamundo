@@ -29,7 +29,8 @@ class Equipo(models.Model):
     continente = models.ForeignKey(Continente)
     tecnico = models.CharField(max_length=60)
     def __unicode__(self):
-        return self.nombre 
+        return self.nombre
+
 
 class Jugador(models.Model):
     nombreJugador = models.CharField(max_length=60)
@@ -45,3 +46,4 @@ class Jugador(models.Model):
     foto = models.ImageField(upload_to='images', verbose_name='Foto', null=True,)
     def __unicode__(self):
         return self.nombreJugador
+
