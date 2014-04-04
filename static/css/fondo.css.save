@@ -1,0 +1,21 @@
+*{
+  margin:10px;
+  padding:10px;
+}
+
+
+h1 {
+  font-style:italic ;
+  f
+  padding-left: 11em;
+  font-family: Georgia, "Times New Roman",Times, serif;
+  color: red;
+  background-color: #d8da3d;
+}
+
+{text-shadow: 0 0 0.2em #87F, 0 0 0.2em #87F,0 0 0.2em #87F}
+body { 
+  color:black;
+}
+
+

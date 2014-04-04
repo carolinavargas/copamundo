@@ -1,0 +1,12 @@
+
+
+
+{% block content %}
+
+         {% for jugador in object_list %}
+                 <img width="50" height="50" src='{{ MEDIA_URL }}{{ jugador.foto }}'></img>
+                 <h4><a href='../player/{{ jugador.id }}/player.html '>{{ jugador }}</a></h4>
+                 <p>{{ jugador.equipo }}</p>
+         {% endfor %}
+{% endblock %}
+

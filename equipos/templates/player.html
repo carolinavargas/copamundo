@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang=es>
+<head>
+<meta charset="utf-8"/>
+<link rel='stylesheet' href ='{{ STATIC_URL }}css/fondo.css'>
+<title> jugadores </title>
+</head>
+<body>
+
+<div class="container">
+{% block header %}
+    <h1>{{jugador.nombreJugador}}</h1>
+{% endblock %}
+
+{% block content %}
+
+      
+<div class="contenedor">
+
+      <div class="tabla">
+      <img  width="200" height="200" src='{{ MEDIA_URL }}{{ jugador.foto }}'></img>
+      </div>
+
+      <div class="infor">
+      <p>Posicion: {{ jugador.posicion | title}}</p>
+      <p>Equipo: {{ jugador.equipo | title}}</p>
+      <p>Estatura: {{ jugador.estatura}}</p>
+      <p>Pie Habil: {{ jugador.pieHabil | title}}</p>
+      <p>Tarjeta Roja: {{ jugador.tarjetaRoja}}</p>
+      <p>Tarjeta Amarilla: {{ jugador.tarjetaAmarilla}}</p>
+      <p>Lesionado: {{ jugador.lesoniado}}</p>
+      <p>Titular: {{ jugador.titular}}</p>
+      <p>Goles: {{ jugador.goles | title}}</p>
+      </div>
+
+</div>
+{% endblock %}
